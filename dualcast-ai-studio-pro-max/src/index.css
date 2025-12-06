@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Global styles for DualCast AI Studio Pro Max.
+ * This file imports Tailwind’s layer directives and defines a few
+ * reusable utility classes for glassmorphism panels. Feel free to tweak
+ * blur and opacity values to achieve your desired frosted effect.
+ */
+
+.glass-panel {
+  @apply bg-panel-bg backdrop-blur-md border border-white/10 shadow-lg rounded-xl;
+}
+
+.neon-text {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-neon-teal via-electric-purple to-magenta;
+}
+
+.section-title {
+  @apply text-2xl font-bold neon-text mb-4;
+}
